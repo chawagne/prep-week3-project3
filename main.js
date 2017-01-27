@@ -92,32 +92,37 @@ var invitees = { adults: [{
 
 
 // 4. Access Penny's dinner choice (this will be the second item in his dinnerChoice array)
+document.getElementById("q4").innerHTML=(invitees["adults"][0]["dinnerChoice"]);
 
 // 5. Access Pablo's table number.
+document.getElementById('q5').innerHTML=(invitees.children[1].table);
 
 // 6. Access Lauren's seating specialConsideration.
+document.getElementById('q6').innerHTML=JSON.stringify((invitees.adults[2].specialConsiderations));
 
 // 7. Access Billy's dessert choice (this will be the third item in his dinnerChoice array)
+document.getElementById('q7').innerHTML=invitees.adults[1].dinnerChoice[2];
 
 // 8. Access Ada's allergies.
+document.getElementById('q8').innerHTML=invitees.children[2].allergies.toString();
 
 // 9. Create a string that reads Lauren's dinner choice in a sentence.
 // Desired result: "Lauren's appetizer is _______. She will be eating ______ for dinner
 // and has selected ________ as her dessert."
-
-
-
-
+var laurensDinner = invitees.adults[2].dinnerChoice
+document.getElementById('q9').innerHTML = "Lauren's appetizer is " + laurensDinner[0] + ". She will be eating " + laurensDinner[1] + " for dinner and has selected " + laurensDinner[2] +" for desert.";
 
 
 // 10. Create an empty object called "jsWorkshop" using Constructor Notation.
+var jsWorkshop = {};
 
 // 11. To your "jsWorkshop" object, assign a key of "classmates" with the value being an array of five your classmates.
+jsWorkshop.classmates = ["Josh","Gibson","Roxann","Brooks","Allison"];
 
 // 12. Get the length of the fourth classmate's name.
-
+document.getElementById('q12').innerHTML=jsWorkshop.classmates[3];
 // 13. Clear the classmates value.
-
+jsWorkshop.classmates="";
 
 
 
