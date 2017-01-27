@@ -16,12 +16,18 @@ BASIC TRACK: 1-13
 ADVANCED TRACK: 14-20
 =======================================================
 */
-
+document.getElementById("q0").innerHTML = "JS Page Connected Properly!";
+document.getElementById("q0").classList.add("status-good");
 
 
 // 1. Create an object called "me" that describes you with your name, city, and job title.
-//    Display the content of the object in the HTML page. 
-
+//    Display the content of the object in the HTML page.
+var me = {
+    name: "Chad",
+    city: "Denver",
+    jobTitle: "Exploratory Tester"
+}
+document.getElementById("q1").innerHTML = JSON.stringify(me);
 
 
 
@@ -31,13 +37,16 @@ ADVANCED TRACK: 14-20
 //                              city: 'Denver',
 //                              jobTitle: 'professional wrestler',
 //                              family: ['Joan', 'Kyle', 'Hank'] }
-
+me.family = ["Stephen Wagner", "Jason Wagner", "Joyce Wagner"];
+document.getElementById("q2").innerHTML = JSON.stringify(me["family"]);
 
 
 
 
 
 // 3. Using the "me" object, use dot notation and bracket notation to access the value of your city and display the results in the HTML page.
+document.getElementById("q3a").innerHTML = me["city"];
+document.getElementById("q3b").innerHTML = me.city;
 
 
 
@@ -150,10 +159,3 @@ var invitees = { adults: [{
 // F. Remove the second book from the books object.
 
 // G. Explain, in your own words, the difference between Literal Notation and Constructor Notation.
-
-
-
-
-
-
-
