@@ -130,11 +130,27 @@ jsWorkshop.classmates="";
 
 // ADVANCED TRACK
 // A. Create an empty object called "books".
+var books = {};
 
 // B. Create three book objects that contain book titles, their author, and number of pages.
 //     The name of each object should be some kind of made up ISBN number.
 //     (Feel free to make up the titles. And the authors. Have fun. No pressure.)
 //     Insert the three objects into the "books" object.
+books.ISBN22222 = {
+    title: "Eloquent JavaScript",
+    author: "A Smartguy",
+    pages: "241"
+}
+books.ISBN33333 = {
+    title: "Eloquenter JavaScript",
+    author: "Smarter Person",
+    pages: "242"
+}
+books.ISBN44444 = {
+    title: "Casual JavaScript",
+    author: "Chad Wagner",
+    pages: "4"
+}
 
 // Final desired result:
     // var books = {ISBN22222:  {
@@ -155,12 +171,16 @@ jsWorkshop.classmates="";
     //             }
 
 // C. Access the author of the first book.
+console.log(books.ISBN22222.author);
 
 // D. Get the length of the author the the third book.
+console.log(books.ISBN33333.author.length);
 
 // E. To each book object variable, add a key of "dateRead" with a value of the year you read the book.
 //     (Go ahead and make this up, too. Get wild.)
-
+books.ISBN22222.dateRead = 2014;
+books.ISBN33333.dateRead = 2016;
+books.ISBN44444.dateRead = 2018;
 // F. Remove the second book from the books object.
 
 // G. Explain, in your own words, the difference between Literal Notation and Constructor Notation.
