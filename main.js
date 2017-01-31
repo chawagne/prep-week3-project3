@@ -182,5 +182,8 @@ books.ISBN22222.dateRead = 2014;
 books.ISBN33333.dateRead = 2016;
 books.ISBN44444.dateRead = 2018;
 // F. Remove the second book from the books object.
+delete books.ISBN33333;
 
 // G. Explain, in your own words, the difference between Literal Notation and Constructor Notation.
+// Literal notation is a way of creating and accessing an object allowing for expressions.
+// Constructor notation allows updating and accessing an object, but only by its actual key names.
